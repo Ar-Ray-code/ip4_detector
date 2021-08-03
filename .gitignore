@@ -1,1 +1,3 @@
-show_ip4
+build/
+target/
+Cargo.lock

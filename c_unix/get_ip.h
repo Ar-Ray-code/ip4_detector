@@ -1,6 +1,5 @@
-// https://www.geekpage.jp/programming/linux-network/get-ipaddr.php
-// How to compile : g++ -o show_ip4 show_ip4.cpp -lnetlink
-// How to use : ./show_ip4 eth0
+#ifndef _GET_IP_H_
+#define _GET_IP_H_
 
 #include <stdio.h>
 
@@ -13,7 +12,6 @@
 #include <netinet/in.h>
 #include <net/if.h>
 #include <arpa/inet.h>
-#include <iostream>
 
 char* get_ip4_address(const char* ifname) {
     int fd = socket(AF_INET, SOCK_DGRAM, 0);
@@ -27,11 +25,4 @@ char* get_ip4_address(const char* ifname) {
     return inet_ntoa(((struct sockaddr_in *)&ifr.ifr_addr)->sin_addr);
 }
 
-int main(int argc, char *argv[])
-{
-    if (argc < 2) {
-        std::cout << "Usage: show_ip4 [interface]" << std::endl;
-        exit(1);
-    }
-    std::cout << get_ip4_address(argv[1]) << std::endl;
-}
+#endif
