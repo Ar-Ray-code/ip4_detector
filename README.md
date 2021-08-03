@@ -3,13 +3,13 @@ Sample programs to identify ip addresses (v4).
 
 For Copy & Paste :laughing: :exclamation:
 
-| language | Show-IP4 | Show-IP4-All | Contributor                              |
-| -------- | -------- | ------------ | ---------------------------------------- |
-| Bash     | ✅        | ✅            | [Ar-Ray](https://github.com/Ar-Ray-code) |
-| Python   | ✅        | ✅            | [Ar-Ray](https://github.com/Ar-Ray-code) |
-| C / C++  | ✅        |              | [Ar-Ray](https://github.com/Ar-Ray-code) |
-| Rust     | ✅        | ✅            | [Ar-Ray](https://github.com/Ar-Ray-code) |
-| Java     |          |              |                                          |
+| language | Show-IP4 | Show-IP4-All |
+| -------- | -------- | ------------ |
+| Bash     | ✅        | ✅            |
+| Python   | ✅        | ✅            |
+| C / C++  | ✅        |              |
+| Rust     | ✅        | ✅            |
+| Java     |          |              |
 
 ## Bash [bash/]
 
