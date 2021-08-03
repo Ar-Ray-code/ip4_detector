@@ -7,7 +7,8 @@ For Copy & Paste :laughing: :exclamation:
 | -------- | -------- | ------------ |
 | Bash     | ✅        | ✅            |
 | Python   | ✅        | ✅            |
-| C / C++  | ✅        |              |
+| C        | ✅        |              |
+| C++      | ✅        | ✅            |
 | Rust     | ✅        | ✅            |
 | Java     |          |              |
 
