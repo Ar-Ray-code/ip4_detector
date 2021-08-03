@@ -2,7 +2,7 @@
 
 // https://www.geekpage.jp/programming/linux-network/get-ipaddr.php
 // https://www.geekpage.jp/programming/linux-network/get-iflist.php
-// How to compile (C) : gcc -o show_ip4_exe show_ip4.c
+// How to compile (C++) : g++ -o show_ip4_exe show_ip4.cpp
 // How to use : ./show_ip4_exe eth0
 
 #include "get_ip.h"

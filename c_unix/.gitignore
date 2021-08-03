@@ -1,1 +1,2 @@
-show_ip4
+*_exe
+show_ip4_all.c
