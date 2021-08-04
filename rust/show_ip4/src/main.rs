@@ -3,7 +3,7 @@ extern crate pnet;
 use std::env;
 use pnet::datalink;
 
-fn ip_find(interface_name: &str) -> String {
+fn ip_find(interface_name: &str) -> String{
     for iface in datalink::interfaces() {
         let ips = iface.ips;
         let mut i = 0;
