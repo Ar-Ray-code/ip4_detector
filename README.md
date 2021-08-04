@@ -27,7 +27,7 @@ $ bash show_interfaces.bash
 ```bash
 $ cd bash/
 $ bash show_ip4.bash eth0
-> 172.17.0.1
+> 192.168.10.5
 ```
 
 ### show_ip4_all.bash
