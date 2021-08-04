@@ -17,21 +17,24 @@ Copy & Paste :laughing: :exclamation:
 ### show_interfaces.bash
 
 ```bash
-$ bash bash/show_interfaces.bash
-> lo wlan0 docker0
+$ cd bash/
+$ bash show_interfaces.bash
+> lo eth0 docker0
 ```
 
 ### show_ip4.bash
 
 ```bash
-$ bash bash/show_ip4.bash docker0
+$ cd bash/
+$ bash show_ip4.bash eth0
 > 172.17.0.1
 ```
 
 ### show_ip4_all.bash
 
 ```bash
-$ bash bash/show_ip4_all.bash
+$ cd bash/
+$ bash show_ip4_all.bash
 > 192.168.10.5 172.17.0.1
 ```
 
@@ -40,8 +43,9 @@ $ bash bash/show_ip4_all.bash
 ### show_ip4.py
 
 ```bash
-$ python python/show_ip4.py docker0
-> 172.17.0.1
+$ cd python/
+$ python show_ip4.py eth0
+> 192.168.10.5
 ```
 
 ### show_ip4_all.py
@@ -57,9 +61,9 @@ $ python python/show_ip4_all.py
 
 ```bash
 $ cd c_unix/
-$ gcc -o show_ip4 c_unix/show_ip4.c
-$ ./show_ip4 eth0
-> 172.17.0.1
+$ gcc -o show_ip4_exe show_ip4.c
+$ ./show_ip4_exe eth0
+> 192.168.10.5
 ```
 
 ## C++  [c++_unix/]
@@ -70,7 +74,7 @@ $ ./show_ip4 eth0
 $ cd c++_unix/
 $ g++ -o show_ip4_exe show_ip4.cpp
 $ ./show_ip4_exe eth0
-> 172.17.0.1
+> 192.168.10.5
 ```
 
 ### show_ip4_all.cpp
@@ -93,7 +97,7 @@ $ cargo run eth0
 > ...
 >    Finished dev [unoptimized + debuginfo] target(s) in 0.34s
 >     Running `target/debug/show_ip4 eth0`
-> 172.17.0.1
+> 192.168.10.5
 ```
 
 ### show_ip4_all
