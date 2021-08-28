@@ -4,4 +4,4 @@ if [ $# -ne 1 ]; then
     exit 1
 fi
 
-echo `ip -4 a | grep $1 | grep -oP '(?<=inet\s)\d+(\.\d+){3}' | grep -v 127`
+echo `ip -4 a | grep $1 | grep -oP '(?<=inet\s)\d+(\.\d+){3}' | egrep -v '^127' `
